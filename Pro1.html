@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            rait.ac.in
+        </title>
+        <link rel="stylesheet" href="pro1.css">
+
+    </head>
+    <body>
+         <!-----------------------------------------NavBar Menu------------------------------->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="RAITLOGO.JPG"</a>
+                <div class="nav-links"></div>
+                <ul class="list">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">ADMISSIONS</a></li>
+                    <li><a href="">CONTACT-US </a></li>
+                </ul>
+            </nav>
+             <!--------------------------------Textbox 1 homepage------------------>
+            <div class="text1">
+
+                <h3>DY Patil University's</h3><br>
+                <h1>Ramrao Adik Institute Of Technology</h1>
+                <br>
+                <a href"">Visit us To Know More</a>
+            </div>
+        </button>
+
+        <!---------------------------Image Slideshow------------------------------------->
+            <div class="main_slider">
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="rait1.JPG" alt="error">
+                    </div>
+                    <div class="slide ">
+                        <img src="rait2.jpg" alt="error">
+                    </div>
+                    <div class="slide ">
+                        <img src="rait3.JPG" alt="error">
+                    </div>
+                    <div class="slide">
+                        <img src="rait4.png" alt="error">
+                    </div>
+                    <!--------------------automatic navigation-->
+                    <div class="nav-auto">
+                       <div class="auto-btn1"></div> 
+                       <div class="auto-btn2"></div>
+                       <div class="auto-btn3"></div>
+                       <div class="auto-btn4"></div>
+                    </div>
+                    <!------------------------manual navigation-------------->
+                    <div class="nav-man">
+                        <label for="radio1" class="man-btn"></label>
+                        <label for="radio2" class="man-btn"></label>
+                        <label for="radio3" class="man-btn"></label>
+                        <label for="radio4" class="man-btn"></label>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <script type="text/javascript">
+               var counter=1;
+               setInterval(function(){
+                document.getElementById('radio'+counter).checked= true;
+                counter++;
+                if(counter>4){
+                    counter=1;
+                }
+               }, 3000);  
+
+            </script>
+        </section>
+    </body>
+
+</html>
